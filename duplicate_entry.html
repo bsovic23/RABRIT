@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="En">
+
+    <head>
+        <link rel="stylesheet" href="homestyle.css"> 
+    </head>
+
+    <header class="navbar_header">
+        <img src="RABRIT_logo.png" class="rabrit_logo">
+        <nav>
+            <ul class="navbar_ul">
+                <li>
+                    <a href="home.html">HOME</a>
+                </li>
+                <li>
+                    <a>PIPELINE ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="pipeline.html">Pipeline</a></li>
+                        <li><a href="pipeline_add.html">Add to Pipeline</a></li>
+                        <li><a href="#">Enrolled</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>REDCap ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="redcap_dd2.html">Insert Survey</a></li>
+                        <li><a href="REDCAP_Questions.html">REDCap Questions</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Duplicate Check ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="duplicate_entry.html">Enter Participant</a></li>
+                        <li><a href="#">Check Duplicate</a></li>
+                    </ul>
+                </li> 
+                <li>
+                    <a>STATISTICS ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="stats.html">DESCRIPTIVE STATISTICS</a></li>
+                    </ul>
+                </li> 
+                <li>
+                    <a>Study Interest ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="#">HIV Interest</a></li>
+                        <li><a href="#">COVID Interest</a></li>
+                    </ul>
+                </li> 
+                <li>
+                    <a>HELP ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="#">TALK TO BRIT</a></li>
+                        <li><a href="#">Add User</a></li>
+                        <li><a href="#">Update RABRIT</a></li>
+                    </ul>
+                </li> 
+            </ul>
+        </nav>
+    </header>
+
+<body>
+
+    <section class="dup_page">
+        
+        <h1 class="dup_heading"><strong><u>Duplicate Entry</u></strong></h1>
+        
+        <form class="dup_box" method="POST">
+
+                <p class="dup-instructions">
+                    Please enter the information correctly...
+                </p>
+                <p class="radio_site">What site are you from?
+                    <input type="radio" name="site radio" id="site-cuimc" />
+                    <label for="site-cuimc">CUIMC</label>
+
+                    <input type="radio" name="site radio" id="site-cornell" />
+                    <label for="site-cornell">Cornell</label>
+
+                    <input type="radio" name="site radio" id="site-nybc" />
+                    <label for="site-nybc">NYBC</label>
+
+                    <input type="radio" name="site radio" id="site-bronx" />
+                    <label for="site-bronx">Bronx</label>
+
+                    <input type="radio" name="site radio" id="site-rutgers" />
+                    <label for="site-rutgers">Rutgers</label>
+
+                    <input type="radio" name="site radio" id="site-harlem" />
+                    <label for="site-harlem">Harlem</label>
+                </p>
+                
+                <div class="px_information">
+                    <label for="today">Todays Date:</label>
+                    <input type="date" id="today" />
+                
+                    <label for="fn">Enter First Name:</label>
+                    <input type="text" placeholder="first name" id="fn" />
+                    
+                    <label for="ln">Enter Last Name:</label>
+                    <input type="text" placeholder="last name" id="ln" />
+                    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" />
+                    
+                    <label for="iddigits">Last 4 Digits of ID:</label>
+                    <input type="text" placeholder="id digits" id="iddigits" />
+                    
+                    <label for="study">Study Screening For:</label>
+                    <input type="text" placeholder="study" id="study" />
+                </div>
+                   
+            <input type="submit" name="" value="submit" onclick="submit()" />
+        
+        </form>
+
+    </section>
+
+</body>
+
+<footer>
+    <p>INSERT FOOTER INFORMATION</p>
+</footer>
+
+
+
+</html>

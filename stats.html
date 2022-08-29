@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Descriptive Statistics</title>
+        <link rel="stylesheet" href="css_stats.css"> 
+        <script src="js_stats.js"></script>
+    </head>
+
+    <header class="navbar_header">
+        <img src="RABRIT_logo.png" class="rabrit_logo">
+        <nav>
+            <ul class="navbar_ul">
+                <li>
+                    <a href="home.html">HOME</a>
+                </li>
+                <li>
+                    <a>PIPELINE ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="pipeline.html">Pipeline</a></li>
+                        <li><a href="pipeline_add.html">Add to Pipeline</a></li>
+                        <li><a href="#">Enrolled</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>REDCap ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="redcap_dd2.html">Insert Survey</a></li>
+                        <li><a href="REDCAP_Questions.html">REDCap Questions</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Duplicate Check ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="duplicate_entry.html">Enter Participant</a></li>
+                        <li><a href="#">Check Duplicate</a></li>
+                    </ul>
+                </li> 
+                <li>
+                    <a>STATISTICS ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="stats.html">DESCRIPTIVE STATISTICS</a></li>
+                    </ul>
+                </li> 
+                <li>
+                    <a>Study Interest ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="#">HIV Interest</a></li>
+                        <li><a href="#">COVID Interest</a></li>
+                    </ul>
+                </li> 
+                <li>
+                    <a>HELP ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="#">TALK TO BRIT</a></li>
+                        <li><a href="#">Add User</a></li>
+                        <li><a href="#">Update RABRIT</a></li>
+                    </ul>
+                </li> 
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <form class="box" method="POST">
+            <h1>Descriptive Stats</h1>
+            <h2>1.Add the names of the variables directly as they appear in the excel file<br> 2. Click submit variable names<br> 3. Click Run Stats</h2>
+                <ul>
+                    <li><input type="text" name="" placeholder="Enter sex at birth" id="sex"></li>
+                    <li><input type="text" name="" placeholder="Enter gender" id="gender"></li>
+                    <li><input type="text" name="" placeholder="Enter dob" id="dob"></li>
+                    <li><input type="text" name="" placeholder="Enter age" id="age"></li>
+                    <li><input type="text" name="" placeholder="Enter var1 interest" id="var1"></li>
+                    <li><input type="text" name="" placeholder="Enter var2 interest" id="var2"></li>
+                    <li><input type="submit" name="" value="submit variable names" onclick="submit_var()"></li>
+                </ul>
+            </h1>
+        </form>
+
+        <form>
+            <h1>STATS RETURN</h1>
+            <ul>
+                <li><input type="text" name="" placeholder="sex at birth" id="sex_return"></li>
+                <li><input type="text" name="" placeholder="gender" id="gender_return"></li>
+                <li><input type="text" name="" placeholder="dob" id="dob_return"></li>
+                <li><input type="text" name="" placeholder="age" id="age_return"></li>
+                <li><input type="text" name="" placeholder="var1*var2 interest" id="var_sig_return"></li>
+                <li><input type="text" name="" placeholder="var1*var2 p value" id="var_p_return"></li>
+                <li><input type="submit" name="" value="Run Stats" onclick="run_stats()"></li>    
+            </ul>
+        </form>
+
+        <h1>Email Results?</h1>
+
+        <form>
+            <ul>
+            <li><input type="text" name="" placeholder="email" id="email"></li>
+            <li><input type="submit" name="" value="send email" onclick="email_results()"></li>
+            </ul>    
+        </form>
+    
+    </body>
+
+    <footer>
+        <button type="button" class="button">
+            <span class="button__text">INSERT DOCUMENT</span>
+            <span class="button__icon"><ion-icon name="document-attach-outline"></ion-icon></span>
+        </button>
+    </footer>
+
+</html>
