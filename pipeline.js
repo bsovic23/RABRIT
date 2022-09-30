@@ -1,3 +1,6 @@
+// On load
+window.onload = loadPx;
+
 // Buttons
 var submitPxBtnEl = document.getElementById('submitPx');
 var savePxBtnEl = document.getElementById('saveInfo');
@@ -51,7 +54,16 @@ submitPxBtnEl.addEventListener("click", addPx);
 function loadPx () {
     var loadedInfo = JSON.parse(localStorage.getItem("enteredPx"));
     console.log(loadedInfo);
-}
+    console.log(loadedInfo.length);
+
+    for (i=0; i < loadedInfo.length; i ++) {
+        console.log(
+            "first name: " + loadedInfo[i][0],
+            "last name: " + loadedInfo[i][1],
+            "study: " + loadedInfo[i][2],
+        );
+    }
+};
 
 loadPxBtnEl.addEventListener("click", loadPx);
 
@@ -62,3 +74,5 @@ function savePx () {
 }
 
 savePxBtnEl.addEventListener("click", savePx);
+
+//
