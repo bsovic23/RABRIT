@@ -1,14 +1,17 @@
-// Collected the information from the participant information
+// Buttons
+var submitPxBtnEl = document.getElementById('submitPx');
+var savePxBtnEl = document.getElementById('saveInfo');
+var loadPxBtnEl = document.getElementById('loadInfo');
 
 // Creating the elements for the form
-
-var submitPxBtnEl = document.getElementById('submitPx');
-
 var hveListEl = document.getElementById('hveSch');
 
 var historyHVE = [];
 
-// Function
+// Functions 
+
+// Function - Add PX 
+
 function addPx() {
     var firstNameEl = document.getElementById('fn').value;
     var lastNameEl = document.getElementById('ln').value;
@@ -39,8 +42,23 @@ function addPx() {
     hveListEl.appendChild(divEl);
 
     historyHVE.push([firstNameEl, lastNameEl, studyChosen])
-
-    console.log(historyHVE);
 };
 
 submitPxBtnEl.addEventListener("click", addPx);
+
+// Function - Load PX 
+
+function loadPx () {
+    var loadedInfo = JSON.parse(localStorage.getItem("enteredPx"));
+    console.log(loadedInfo);
+}
+
+loadPxBtnEl.addEventListener("click", loadPx);
+
+// Function - Save PX 
+
+function savePx () {
+    localStorage.setItem("enteredPx", JSON.stringify(historyHVE));
+}
+
+savePxBtnEl.addEventListener("click", savePx);
