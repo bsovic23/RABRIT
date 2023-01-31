@@ -3,7 +3,7 @@ import React from 'react';
 function Redcap() {
     return(
         <section class="redcap">
-            <h2>REDcap FAQ answered by Brit</h2>
+            <h2>Division of Infectious Diseases REDCap FAQ answered by Brit</h2>
 
             <div class="redcap-faq">
                 <div class="redcap-question">
@@ -15,7 +15,8 @@ function Redcap() {
                     1. The chart string may have expired. Contact the member in the Administrative Finance Department 
                     that is in charge of chart strings. The owner of the REDCap Project may have to re-delagate 
                     him/her to enter a new valid chart string.
-                    
+                    <br />
+                    <br />
                     2. The project may have been accidently deleted, in which case you will have to re upload the 
                     most recent data dictionary and data backup as a new project
                 </p>

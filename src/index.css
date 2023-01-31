@@ -67,6 +67,16 @@ body {
   text-decoration: underline;
 }
 
+/* Redcap ====================================== */
+.redcap h2 {
+  text-align: center;
+  color: var(--wordColor);
+}
+
+.redcap .redcap-faq .redcap-question h3 {
+  text-decoration: underline;
+}
+
 /* Footer ====================================== */
 .footer #github-icon, #linkedin-icon {
   color: var(--wordColor);
