@@ -13,7 +13,7 @@ function Footer() {
                 <a href="https://www.linkedin.com/in/brit-sovic/" target="_blank">< AiFillLinkedin class="icon" id="linkedin-icon"/></a>
             </div>
             <div class="footer-instructions">
-                <a href="">Click here to return to the top of the page</a>
+                <a href="/">Click here to return to the top of the page</a>
             </div>
         </section>
     )

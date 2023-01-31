@@ -13,7 +13,7 @@ function Home() {
                     </ul>
                 <h3>Occupation</h3>
                 <p>
-                    Current Occupation: Data Analysis and Managment for the Infectious Diseases Department of Medicine at Columbia University Irving Medical Center
+                    Data Analysis and Managment for the Infectious Diseases Department of Medicine at Columbia University Irving Medical Center (Current)
                 </p>
                 <h3>What is RABRIT</h3>
                 <p>

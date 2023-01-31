@@ -10,7 +10,7 @@ body {
   background-color: #B6DCFE;
 }
 
-.header, .footer {
+.header, .footer, .navbar {
   background-color: var(--boxColor);
   padding: var(--padding); 
 }
@@ -26,6 +26,29 @@ body {
   text-align: center;
 }
 
+/* Navbar ====================================== */
+.navbar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: var(--wordColor);
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: yellow;
+}
+
+
 /* Home ======================================== */
 .home {
   margin-top: 10px;
@@ -40,6 +63,10 @@ body {
   color: var(--wordColor);
 }
 
+.home h3 {
+  text-decoration: underline;
+}
+
 /* Footer ====================================== */
 .footer #github-icon, #linkedin-icon {
   color: var(--wordColor);
@@ -47,6 +74,14 @@ body {
   width: 50px;
   margin: 10px;
   margin-left: 50%;
+}
+
+.footer #github-icon:hover {
+  color: yellow;
+}
+
+.footer #linkedin-icon:hover {
+  color: yellow;
 }
 
 .footer .footer-instructions {
