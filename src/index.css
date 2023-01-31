@@ -16,7 +16,7 @@ body {
 }
 
 /* Header ==================================== */
-.header, .footer, .home, .redcap {
+.header, .footer, .home, .redcap, .study {
   background-color: var(--boxColor);
   padding: var(--padding); 
 }
@@ -75,6 +75,20 @@ body {
 
 .redcap .redcap-faq .redcap-question h3 {
   text-decoration: underline;
+}
+
+/* Study ========================================== */
+.study h2 {
+  color: var(--wordColor);
+  text-align: center;
+}
+
+.study h3 {
+  text-decoration: underline;
+}
+
+.study li {
+  list-style-type: none;
 }
 
 /* Footer ====================================== */
