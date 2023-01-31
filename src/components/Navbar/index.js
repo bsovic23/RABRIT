@@ -5,7 +5,7 @@ function Navbar() {
         <section class="navbar">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="">REDCap FAQ</a></li>
+                <li><a href="/Redcap">REDCap FAQ</a></li>
                 <li><a href="">Studies</a></li>
                 <li><a href="">Questions</a></li>
             </ul>

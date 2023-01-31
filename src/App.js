@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 // Pages
 
 import Home from './components/Home';
+import Redcap from './components/Redcap';
 
 function App() {
 
@@ -17,6 +18,9 @@ function App() {
   switch (window.location.pathname) {
     case "/": 
       component = <Home />
+      break
+    case "/Redcap":
+      component = <Redcap />
       break
   }
 

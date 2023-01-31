@@ -16,7 +16,7 @@ body {
 }
 
 /* Header ==================================== */
-.header, .footer, .home {
+.header, .footer, .home, .redcap {
   background-color: var(--boxColor);
   padding: var(--padding); 
 }
