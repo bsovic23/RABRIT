@@ -16,14 +16,28 @@ body {
 }
 
 /* Header ==================================== */
-.header, .footer {
+.header, .footer, .home {
   background-color: var(--boxColor);
   padding: var(--padding); 
 }
 
-.header h1, p {
+.header h1, .header p {
   color: var(--wordColor);
   text-align: center;
+}
+
+/* Home ======================================== */
+.home {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.home h2 {
+  text-align: center;
+}
+
+.home h2, h3, ul, li, p {
+  color: var(--wordColor);
 }
 
 /* Footer ====================================== */
