@@ -16,7 +16,7 @@ body {
 }
 
 /* Header ==================================== */
-.header, .footer, .home, .redcap, .study {
+.header, .footer, .home, .redcap, .study, .questions {
   background-color: var(--boxColor);
   padding: var(--padding); 
 }
@@ -89,6 +89,21 @@ body {
 
 .study li {
   list-style-type: none;
+}
+
+/* Questions ========================================== */
+.questions h2 {
+  text-align: center;
+  color: var(--wordColor);
+}
+
+.questions form label {
+  color: var(--wordColor);
+}
+
+.questions form div {
+  display: block;
+  margin: 10px;
 }
 
 /* Footer ====================================== */

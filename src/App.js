@@ -11,6 +11,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Redcap from './components/Redcap';
 import Study from './components/Study';
+import Questions from './components/Questions';
 
 function App() {
 
@@ -25,6 +26,9 @@ function App() {
       break
     case "/Study":
       component = <Study />
+      break
+    case "/Questions":
+      component = <Questions />
       break
   }
 
